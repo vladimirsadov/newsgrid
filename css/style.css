@@ -1,8 +1,11 @@
 :root {
   --primary-color: #c72727;
+  --primary-shade: #9F1F1F;
   --secondary-color: #f99500;
+  --secondary-shade: #e08600;
   --light-color: #f3f3f3;
   --dark-color: #333;
+  --dark-shade: #424242;
   --max-width: 1100px;
 }
 
@@ -75,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--dark-color);
   color: #fff;
   padding: 0.5rem 1.5rem;
+  transition: all 0.25s ease-out
 }
 
 .btn-light { background: var(--light-color) ;}
@@ -82,15 +86,19 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secondary { background: var(--secondary-color) ;}
 
 .btn:hover {
-  opacity: 0.8;
   cursor: pointer;
 }
+
+.btn-primary:hover { background: var(--primary-shade);}
+.btn-secondary:hover { background: var(--secondary-shade);}
 
 .btn-block {
   display: block;
   width: 100%;
   text-align: center;
 }
+
+.btn-block:hover { background: var(--dark-shade);}
 
 .card {
   background: #fff;
